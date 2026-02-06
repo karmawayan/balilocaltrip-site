@@ -1,9 +1,21 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <div id="cms-root"></div>
+
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
+
+    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
+
+    <script>
+      CMS.init();
+    </script>
+  </body>
 </html>
