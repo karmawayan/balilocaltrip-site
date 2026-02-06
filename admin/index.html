@@ -6,5 +6,33 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@3/dist/decap-cms.js"></script>
+    <script>
+      CMS.init({
+        backend: {
+          name: "github",
+          repo: "karmawayan/balilocaltrip-site",
+          branch: "main"
+        },
+        media_folder: "assets/uploads",
+        public_folder: "/assets/uploads",
+        collections: [
+          {
+            name: "pages",
+            label: "Pages",
+            files: [
+              {
+                name: "home",
+                label: "Homepage",
+                file: "index.html",
+                fields: [
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "markdown" }
+                ]
+              }
+            ]
+          }
+        ]
+      });
+    </script>
   </body>
 </html>
