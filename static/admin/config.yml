@@ -1,13 +1,12 @@
 backend:
   name: github
-  repo: @karmawayan/balilocaltrip-site
+  repo: karmawayan/balilocaltrip-site
   branch: main
 
 media_folder: "static/images"
 public_folder: "/images"
 
 collections:
-
   - name: "tours"
     label: "Tours"
     folder: "content/tours"
@@ -15,12 +14,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Description", name: "description", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "Blog"
+  - name: "blog"
     label: "Blog"
     folder: "content/blog"
     create: true
