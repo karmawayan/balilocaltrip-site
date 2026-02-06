@@ -1,1 +1,27 @@
 
+window.CMS_MANUAL_INIT = true;
+
+window.CMS_CONFIG = {
+  backend: {
+    name: "test-repo"
+  },
+  media_folder: "assets/uploads",
+  public_folder: "/assets/uploads",
+  collections: [
+    {
+      name: "pages",
+      label: "Pages",
+      files: [
+        {
+          name: "home",
+          label: "Homepage",
+          file: "index.html",
+          fields: [
+            { label: "Title", name: "title", widget: "string" },
+            { label: "Body", name: "body", widget: "markdown" }
+          ]
+        }
+      ]
+    }
+  ]
+};
