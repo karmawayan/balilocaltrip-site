@@ -1,6 +1,5 @@
 ---
-title: Test
+title: Hello
 ---
 
-Hello Decap CMS
-
+Decap CMS is working
