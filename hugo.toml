@@ -1,0 +1,7 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "BaliLocalTrip - Website"
+theme = ""
+
+[params]
+  whatsapp = "6281977315539"
