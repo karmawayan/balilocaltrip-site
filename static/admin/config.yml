@@ -2,27 +2,18 @@ backend:
   name: github
   repo: karmawayan/balilocaltrip-site
   branch: main
-  base_url: "https://balilocaltrip-site.pages.dev",
-  auth_endpoint: "oauth"
+  base_url: https://localtrip.karmalanzbase.workers.dev
+  auth_endpoint: auth
 
-media_folder: "static/images"
-public_folder: "/images"
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
-  - name: "tours"
-    label: "Tours"
-    folder: "content/tours"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
