@@ -1,19 +1,16 @@
-
 backend:
-  name: github
-  repo: karmawayan/balilocaltrip-site
-  branch: main
+  name: test-repo
 
 media_folder: assets/uploads
 public_folder: /assets/uploads
 
 collections:
-  - name: pages
-    label: Pages
+  - name: test
+    label: Test Content
     files:
-      - name: home
-        label: Homepage
-        file: index.html
+      - name: demo
+        label: Demo Page
+        file: test.md
         fields:
           - label: Title
             name: title
