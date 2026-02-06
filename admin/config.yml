@@ -1,1 +1,8 @@
 
+backend:
+  name: test-repo
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections: []
