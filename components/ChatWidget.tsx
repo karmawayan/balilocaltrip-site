@@ -15,10 +15,10 @@ export default function ChatWidget() {
       </div>
 
       <div className="flex-1 p-6 overflow-y-auto bg-slate-50 space-y-4">
-        <div className="bg-white border border-slate-200 p-4 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-sm leading-relaxed">
-          Hi! I&apos;m **Putu** from **Bali Local Trip**. 🌴 <br/><br/>
-          I can give you instant prices for car rentals, day tours, and airport transfers. Where would you like to go today?
-        </div>
+       <div className="bg-white border border-slate-200 p-4 rounded-2xl rounded-tl-none shadow-sm max-w-[85%] text-sm leading-relaxed">
+        Hello! I'm **Putu** from **Bali Local Trip**. 🌴 <br/><br/>
+        I can help you with instant quotes for private car rentals and customized Bali tours. Where would you like to explore?
+       </div>
       </div>
 
       <div className="p-6 bg-white border-t border-slate-100 flex gap-3">
